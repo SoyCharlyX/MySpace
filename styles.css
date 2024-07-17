@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*<<<<<<PRIMERA SECCION>>>>>>>>>>
+        Sección inicio*/
+
+
+/*Todo la primera section con id #inicio*/
+#inicio {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, .7)), url("imagenes/fondo2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+/*div .contenedor*/
+#inicio .contenedor header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width:100%;
+    z-index: 100;
+    top: 0;
+}
+/*Header*/
+/*Todo el contenedor div*/
+#inicio .contenedor header .contenedor-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+/*Logo (C10)*/
+#inicio .contenedor header .contenedor-header h1 {
+    text-align: center;
+    color: #ff5080;
+}
+/*contenedor nav con INICIO, SOBRE MI etc, etc*/
+#inicio .contenedor header .contenedor-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+/*Links*/
+#inicio .contenedor header .contenedor-header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 2s;
+}
+/*Efecto al pasar el cursor*/
+#inicio .contenedor header .contenedor-header nav ul li a:hover {
+    color: #eb2056;
+}
+
+#inicio .contenedor header .contenedor-header .selecionado {
+    color: #eb2056;
+}
+/*iconos de redes sociales*/
+#inicio .contenedor header .contenedor-header .redes-sociales a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 1s;
+}
+/*efecto de los iconos al pasar cursor*/
+#inicio .contenedor header .contenedor-header .redes-sociales a:hover {
+    color: #eb2056;
+}
+
+/*presentación*/
+/*Todo el div*/
+#inicio .contenedor .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+/*parrafo*/
+#inicio .contenedor .presentacion .bienvenida {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/*Todo el texto de Soy Carlos...*/
+#inicio .contenedor .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/*Solo mi nombre*/
+#inicio .contenedor .presentacion h2 span {
+    font-size: 40px;
+    color: #f02f62;
+}
+/*<p>Tengo 18 años...*/
+#inicio .contenedor .descripcion {
+    max-width:700px;
+    margin: 25px auto;
+    font-size: 20px;
+    text-align: center;
+}
+/*Boton de "IR A PORTAFOLIO"*/
+#inicio .contenedor .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius:50px ;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+} 
+/*Efecto del boton al pasar cursor*/
+#inicio .contenedor .presentacion a:hover {
+    background-color: #eb2056;
+}
+/*icono de tres rayitas*/
+#icono-nav {
+    color: rgb(255, 249, 249);
+    display: none;
+}
+
+
+
+
+/*<<<<<<SEGUNDA SECCION>>>>>>>>>>
+         Sección sobre mi*/
+/*Toda la secion*/
+#sobre-mi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+/*todo el div de mi foto (Tamaño)*/
+#sobre-mi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+/*Solo mi foto*/
+#sobre-mi .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+/*div .sobre-mi (TODAS LAS LETRAS)*/
+#sobre-mi .sobre-mi {
+    margin: 0 40px;
+}
+/*Encabezado o titulo "SOBRE MI"*/
+#sobre-mi .sobre-mi .titulo-sobre-mi {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+/*Texto "HOLA SOY"*/
+#sobre-mi .sobre-mi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+/*Texto "CARLOS ALVARADO"*/
+#sobre-mi .sobre-mi h2 span {
+    color: #eb2056;
+}
+/*Texto "DESARROLLADOR WEB"*/
+#sobre-mi .sobre-mi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+/*Parrafo de info*/
+#sobre-mi .sobre-mi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+/*Boton "DESCARGAR CV"*/
+#sobre-mi .sobre-mi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: 1s;
+}
+/*color del fecto del boton*/
+#sobre-mi .sobre-mi a:hover {
+    background-color:  #eb2056;
+    color: #fff;
+    border-color: #fff;
+
+}
+
+
+
+
+
+
+/*<<<<<<TERCERA SECCION>>>>>>>>>>
+     Sección Mis servicios>>>*/
+/*id Toda la section*/
+#servicios {
+    padding: 100px 15px ;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+/*titulo "MIS SERVICIOS"*/
+#servicios .titulo-servicios {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+/*TODO EL DIV donde están las cartitas*/
+#servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+/*Todas las cartitas (TODAS TIENEN la clase .servicio)*/
+#servicios .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 2s;
+}
+/*Efecto al pasar el cursor*/
+#servicios .fila .servicio:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+/*Titulo dentro de las cartitas*/
+#servicios .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+/*iconos de las cartitas*/
+#servicios .fila .servicio .icono{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+/*Rayita bajo el titulo*/
+#servicios .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+/*listas*/
+#servicios .fila .servicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/*parrafos de las cartitas*/
+#servicios .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+
+
+/*<<<<<<CUARTO>>>>>>>>>>
+     div habilidades*/
+
+/*TODO EL DIV con clase (.contenedor-habilidades)*/
+.contenedor-habilidades {
+    background: linear-gradient(#eb5a5acc, rgba(33,16,16.8)), url("imagenes/fondo1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    height: 500px;
+}
+/*Divs hijos*/
+.contenedor-habilidades .habilidades {
+    max-width: 600px;
+    margin: 30px auto;
+}
+/*informacio*/
+.contenedor-habilidades .habilidades .info {
+    display: flex;
+    justify-content: space-between;
+}
+/*Lista de lenguajes*/
+.contenedor-habilidades .habilidades .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+/*barra de porcentaje*/
+.contenedor-habilidades .habilidades .barra {
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+ 
+/*4 barras de porcentaje (1)*/
+.contenedor-habilidades .habilidades .barra .barra-progreso1 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    /*Efecto con Js*/
+    animation: progreso1 5s forwards;
+}
+/*(2)*/
+.contenedor-habilidades .habilidades .barra .barra-progreso2 {
+    background-color: #fff;
+    width: 45%;
+    height: 6px;
+    /*Efecto con Js*/
+    animation: progreso2 5s forwards;
+}
+/*(3)*/
+.contenedor-habilidades .habilidades .barra .barra-progreso3 {
+    background-color: #fff;
+    width: 5%;
+    height: 6px;
+    /*Efecto con Js*/
+    animation: progreso3 5s forwards;
+}
+/*(4)*/
+.contenedor-habilidades .habilidades .barra .barra-progreso4 {
+    background-color: #fff;
+    width: 0%;
+    height: 6px;
+    /*Efecto con Js*/
+    animation: progreso4 5s forwards;
+}
+/*Animaciones de las barras*/
+/*(1)*/
+@keyframes barra-progreso1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+/*(2)*/
+@keyframes barra-progreso2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+/*(3)*/
+@keyframes barra-progreso3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+/*(4)*/
+@keyframes barra-progreso4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+
+/*<<<<<<QUINTA SECCION>>>>>>>>>>
+       Sección portafolio*/
+/*Toda la section*/
+#portafolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+/*titulo "MIS PROYECTOS"*/
+#portafolio .titulo-section {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+/*div donde estan TODOS los proyectos*/
+#portafolio .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+/*todas las cartitas de proyectos*/
+#portafolio .fila .proyecto {
+    max-width:450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+/*imagen dentro de la cartita*/
+#portafolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(5);
+    object-fit: cover;
+    transition: 1s;
+}
+/*efecto de color al pasar el cursor*/
+#portafolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+/*letras sobre los proyectos*/
+#portafolio .fila .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 2s;
+}
+/*efecto al pasar el cursor*/
+#portafolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+
+/*<<<<<<SEXTA SECCION>>>>>>>>>>
+       Sección contacto*/
+/*Toda la section*/
+#contacto {
+    padding: 100px 15px;
+}
+/*Solo el titulo "CONTACTAR AHORA*/
+#contacto .titulo-section {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #919191;
+    text-decoration-thickness: 5px;
+
+}
+/**/
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+/*Divs dnde están los input*/
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+/*Dirección de correo*/
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+/*TODOS los input*/
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+#contacto .contenedor-form .mitad input{
+    width: 48%;
+}
+/*Tu mensaje*/
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+/*Boton de enviar*/
+#contacto .boton-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 2s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*efecto*/
+#contacto .boton-enviar:hover {
+    background-color: #eb2056;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+}
+
+
+
+
+
+/* RESPONSIVE*/
+@media screen and (max-width:700px){
+
+   .redes-sociales {
+       display: none;
+    }
+    nav {
+       display: none;
+    }
+    nav.responsive {
+       display: block;
+       background-color: rgba(0, 0, 0, .8);
+       width: 100%;
+       position: absolute;
+       top: 48px;
+       left: 0;
+       padding: 10px 0;
+    }
+    nav.resposive ul{
+       display: block !important;
+       text-align: center;
+    }
+    nav.resposive ul li{
+            margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenedor .presentacion h2 {
+        font-size: 40px;
+    }
+    #sobre-mi {
+        padding: 50px 0;
+        display: block;
+    }
+    #sobre-mi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobre-mi .contenedor-foto img {
+        padding: 8px;
+    }
+    #sobre-mi .sobre-mi .titulo-section {
+        text-align: center;
+    }
+    #sobre-mi .sobre-mi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .titulo-sobre-mi {
+        text-align: center;
+    }
+        /*Boton "DESCARGAR CV"*/
+    #sobre-mi .sobre-mi a{
+            margin-left: 70px;
+        }
+    .sobre-mi h3{
+        text-align: center;
+    }
+        .sobre-mi p{
+            text-align: center;
+        }
+
+    #servicios {
+        padding: 50px 15px;
+    }
+    #servicios .fila {
+        display: block;
+    }
+    #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+    .contenedor-habilidades {
+        padding: 50px 20px;
+    }
+    #portafolio {
+        padding: 50px 0;
+    }
+    #portafolio .fila {
+        display: block;
+    }
+    #portafolio .fila .proyecto {
+        margin: 10px auto;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-top: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
